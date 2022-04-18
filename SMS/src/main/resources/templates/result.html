@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<link rel="stylesheet" type="text/css" href="/bootstrap/css/bootstrap.min.css">
+<title>Student Management System</title>
+</head>
+<body>
+<form method="post" th:action="@{/admin/add_result}" th:object="${result}">
+
+<CAPTION Align = "Center"> Marks of First Terminal Examination </CAPTION>
+	<div >
+	    <label>Class ID</label>
+	    <input type="number" placeholder="Enter Class Id"
+	     th:field="*{classes}" required  maxlength="38">
+	  </div>
+	  <div >
+	    <label >Student ID</label>
+	    <input type="number" id="exampleInputClassId" placeholder="Enter Student Id"
+	     th:field="*{student}" required  maxlength="38">
+	  </div>
+	  
+	  <div>
+	  	<label>Subject ID1</label>
+	    <input type="number"  placeholder="Enter Subject ID1"
+	     th:field="*{subject}" required  maxlength="38">
+	    <label>Marks Subject1 </label>
+	    <input type="number"  placeholder="Enter Marks"
+	     th:field="*{marks1}" required  maxlength="38">
+	  </div>
+	  <div>
+	  	<label>Subject ID2</label>
+	    <input type="number"  placeholder="Enter Subject ID2"
+	     th:field="*{subject}" required  maxlength="38">
+	    <label >Marks Subject2</label>
+	    <input type="number"  placeholder="Enter Marks"
+	     th:field="*{marks2}" required  maxlength="38">
+	  </div>
+	  <div>
+	  <label>Subject ID3</label>
+	    <input type="number"  placeholder="Enter Subject ID3"
+	     th:field="*{subject}" required  maxlength="38">
+	    <label >Marks Subject 3</label>
+	    <input type="number"  placeholder="Enter Marks"
+	     th:field="*{marks3}" required  maxlength="38">
+	  </div>
+	  <div>
+	  <label>Subject ID4</label>
+	    <input type="number"  placeholder="Enter Subject ID4"
+	     th:field="*{subject}" required  maxlength="38">
+	    <label>Marks Subject4</label>
+	    <input type="number" placeholder="Enter Marks"
+	     th:field="*{marks4}" required  maxlength="38">
+	  </div>
+	  <div>
+	    <label th:field="*{total_mark}">Total Marks</label>
+	    
+	  </div>
+	  <div>
+	    <label th:field="*{percentage}">Percentage</label>
+	    
+	  </div>
+	  <div>
+	    <label th:field="*{status}">Status</label>
+	    
+	  </div>
+	
+<button type="submit" class="btn btn-primary">Submit</button>
+</form>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<link rel="stylesheet" type="text/css" href="/bootstrap/css/bootstrap.min.css">
+<title>Insert title here</title>
+</head>
+<body>
+<TABLE BORDERCOLOR = "BLUE" border = "2">
+<CAPTION Align = "Center"> Marks of First Terminal Examination </CAPTION>
+	<TR>
+	<TH> Sl. No. </TH>
+	<TH> Subject </TH>
+	<TH> Marks Obtained</TH>
+	<TH> Maximum Marks </TH>
+	</TR>
+	<TR>
+	<TD> 1 </TD> <TD> English </TD><TD> <span th:text="${result.marks1}"></span> </TD> <TD> 100 </TD>
+	</TR>
+	<TR>
+	<TD> 2 </TD> <TD> Hindi </TD> <TD> <span th:text="${result.marks2}"></span> </TD> <TD> 100 </TD>
+	</TR>
+	<TR>
+	<TD> 3 </TD> <TD> Science </TD> <TD> <span th:text="${result.marks3}"></span> </TD> <TD> 100 </TD>
+	</TR>
+	<TR>
+	<TD> 4 </TD> <TD> Social Science </TD> <TD> <span th:text="${result.marks4}"></span></TD> <TD> 100 </TD>
+	</TR>
+	<TR>
+	<TD> Total Marks </TD> <TD> <span th:text="${result.total_mark}"></span></TD>
+	</TR>
+	<TR>
+	<TD>Percentage </TD> <TD> <span th:text="${result.percentage}"></span></TD>
+	</TR>
+	<TR>
+	<TD>Result Status </TD> <TD> <span th:text="${result.status}"></span></TD>
+	</TR>
+</TABLE>
+</body>
+</html>
